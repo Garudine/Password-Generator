@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1F2937;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 50px;
+    line-height: 40px;
+    margin-bottom: 0;
+    color: white;
+}
+
+h3 {
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+}
+
+hr {
+    background-color: #2F3E53;
+    max-width: 600px;
+    height: 1px;
+    border: none;
+    margin-top: 30px;
+}
+
+button {
+    color: white;
+    background-color: #10B981;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#PaswordLenght {
+    color: white;
+    background-color: #10B981;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 35px;
+    font-size: 18px;
+}
+
+#PaswordLenght::placeholder {
+    color: white;
+}
+
+#passwordsContainer {
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.passwords {
+    height: 40px;
+    width: 200px;
+    margin: 20px 40px;
+    border: none;
+    background-color: #273549;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    color: #202B3C;
+    line-height: 40px;
+}
+
+#mainSection {
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    padding: 30px;
+    border: solid #283549 2px;
+    border-radius: 15px;
+    filter: drop-shadow(10px 10px #202b3b);
+}
+
+#highlight {
+    color: #4ADF86;
+}
+
+#acciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:450px) {
+    #passwordsContainer {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #acciones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
