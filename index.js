@@ -72,9 +72,9 @@ passLenght.addEventListener("input", () => (num = passLenght.value));
 
 function generatePass(num = 8) {
   let passArray = [];
-  for (let g = 1; g <= num; g++) {
+  for (let g = 1; g <= 4; g++) {
     let passGenerado = "";
-    for (let i = 1; i < num; i++) {
+    for (let i = 1; i <= num; i++) {
       let randomPass = Math.floor(Math.random() * characters.length);
       passGenerado += characters[randomPass];
     }
